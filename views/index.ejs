@@ -1,0 +1,29 @@
+<% include ./partials/header.ejs %>
+
+  <!-- Content goes here --> 
+
+  <% if(title == "Manthan Shah") { %>
+      <div class="container">
+          <div class="jumbotron">
+            <h1 class="display-4"><%= title %></h1>
+            <p>To prosecute a highly ambitious career, where I can use my experience and education to help the company meet and surpass its goals and want to excel in this field with hard work, perseverance and dedication in order to be the part of success in the environment of growth and excellence.</p>
+            <a class="btn btn-primary" href="/about" role="button">About Me</a>
+          </div>
+      </div>
+
+      <% } %>
+
+<% if(title == "About") { %>
+      <img src="pic.jpg" alt="Responsive image">
+       <a class="btn btn-primary" href="https://drive.google.com/open?id=1e-LsL0IZ1KUh4q7BR4MnkS8T3t4xttqb" role="button">Resume</a>
+      <% } %>
+
+<% if(title == "Contact") { %>
+      <div class="container">
+          <div class="jumbotron">
+            <h1 class="display-4">Manthan Shah</h1>
+          </div>
+      </div>
+
+      <% } %>
+<% include ./partials/footer.ejs %>
